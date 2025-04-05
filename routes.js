@@ -3,8 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {MaterialCommunityIcons, MaterialComuntyicons} from "@expo/vector-icons";
 
 import Home from './Home.js';
-import Search from './Search.js';
-import Config from './Config.js';
+import Playlist from './Playlist.js';
+import Profile from './Profile.js';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,20 +26,20 @@ export default function Routes(){
             }}
             />
             <Tab.Screen
-            name="Search"
-            component={Search}
+            name="Playlist"
+            component={Playlist}
             options={{
                 tabBarIcon:({coler,size}) =>(
-                    <MaterialCommunityIcons name='search' size={size}/>
+                    <MaterialCommunityIcons name='antenna' size={size}/>
                 ),
             }}
             />
             <Tab.Screen
-            name="Config"
-            component={Config}
+            name="Profile"
+            component={Profile}
             options={{
                 tabBarIcon:({coler,size}) =>(
-                    <MaterialCommunityIcons name='config' size={size}/>
+                    <MaterialCommunityIcons name='account' size={size}/>
                 ),
             }}
             />
